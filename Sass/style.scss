@@ -1,0 +1,501 @@
+/*
+ Theme Name:  Fleurs d'orangers et chats errants - Oscars Short
+ Theme URI: https://www.koukaki.local
+ Author: Studio Koukaki
+ Author URI: https://www.koukaki.local
+ Template: foce
+ Description: Thème enfant à l'ocasion de la nomination aux Oscars Shorts
+ Version: 0.1
+ */
+
+@import "_animations", "_burger-menu", "_oscar", "_swiper";
+
+// Positionnement de la vidéo et du logo
+
+.banner img {
+  z-index: 2;
+  width: 100%;
+}
+
+video {
+  z-index: 0;
+  position: absolute;
+}
+
+// Positionnement du titre section personnages
+.story #characters {
+  h3 {
+    background-image: url("./assets/images/orange_characters_bg.png");
+    margin-left: -20em;
+  }
+}
+
+// Positionnement des éléments section Lieu
+.story #place {
+  background-image: url("/Koukaki/wp-content/themes/foce-child/assets/images/Studio_Koukaki-image_place.png");
+}
+
+.big-cloud {
+  position: absolute;
+  left: 43%;
+  bottom: 25%;
+  filter: blur(15px);
+}
+
+.little-cloud {
+  position: absolute;
+  left: 22%;
+  bottom: 18%;
+  filter: blur(15px);
+}
+
+//Dimension des fleurs
+.story h2::after {
+  height: 154px;
+  width: 154px;
+}
+
+.story__article::after {
+  height: 188px;
+  width: 188px;
+}
+
+#studio h2::before {
+  height: 200px;
+  width: 200px;
+}
+
+#studio h2::after {
+  height: 109px;
+  width: 109px;
+}
+
+.site-footer::before {
+  height: 154px;
+  width: 154px;
+}
+
+.site-footer::after {
+  height: 170px;
+  width: 170px;
+}
+
+.site-footer ul::after {
+  height: 646px;
+  width: 646px;
+}
+
+/* Media Query for small phones */
+
+@media all and (min-width: 320px) and (max-width: 480px) {
+  video {
+    display: none;
+  }
+
+  .banner {
+    min-height: 450px;
+    img {
+      width: 70%;
+      display: block;
+      margin: 0px auto;
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .story #characters {
+    margin: 0;
+    h3 {
+      margin: 0;
+    }
+  }
+
+  .swiper-slide img {
+    max-width: 150px;
+  }
+
+  .big-cloud {
+    display: none;
+  }
+
+  .little-cloud {
+    display: none;
+  }
+
+  .site-footer {
+    padding-top: 15%;
+  }
+
+  .oscar {
+    flex-direction: column;
+    .oscar__txt {
+      margin: 0;
+      font-size: 1.1em;
+    }
+    .oscar__img {
+      padding-bottom: 0;
+    }
+  }
+
+  .main-navigation {
+    .site-title {
+      font-size: 1em;
+    }
+    ul {
+      display: block;
+    }
+  }
+
+  .burger__btn {
+    right: -10px;
+    top: 14px;
+    .line1,
+    .line2,
+    .line3 {
+      width: 18px;
+      height: 2px;
+    }
+  }
+
+  .burger-logo {
+    display: block;
+    margin: 0px auto;
+    width: 30%;
+  }
+
+  .burger__nav ul li {
+    top: 10%;
+    a {
+      font-size: 30px;
+      text-align: center;
+    }
+  }
+
+  .orchid-menu {
+    position: absolute;
+    top: 20%;
+    left: -7%;
+    max-width: 83px;
+  }
+
+  .chat-violet-menu {
+    display: none;
+  }
+
+  .sunflower-menu {
+    position: absolute;
+    top: 25%;
+    right: 0%;
+    max-width: 74px;
+  }
+
+  .random-flower-menu {
+    display: none;
+  }
+
+  .orange-flower-menu {
+    display: none;
+  }
+
+  .chat-noir-menu {
+    display: none;
+  }
+
+  .chat-orange-menu {
+    position: absolute;
+    top: 75%;
+    left: 15%;
+    max-width: 86px;
+  }
+
+  .orange-orchid-menu {
+    position: absolute;
+    top: 81%;
+    right: -30%;
+    max-width: 246px;
+  }
+}
+
+/* Media Query for large phones and low resolution  Tablets, Ipads */
+@media all and (min-width: 481px) and (max-width: 699px) {
+  video {
+    display: none;
+  }
+
+  .banner {
+    min-height: 550px;
+    img {
+      display: block;
+      margin: 0px auto;
+      width: 70%;
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .story #characters {
+    margin: 0;
+    h3 {
+      margin: 0;
+    }
+  }
+
+  .swiper-slide img {
+    max-width: 250px;
+  }
+
+  .big-cloud {
+    left: 40%;
+    bottom: 32%;
+    width: 30%;
+  }
+
+  .little-cloud {
+    left: 22%;
+    bottom: 30%;
+    width: 15%;
+  }
+
+  .site-footer {
+    padding-top: 15%;
+  }
+
+  .oscar {
+    flex-direction: column;
+    .oscar__txt {
+      margin: 0;
+      font-size: 1.5em;
+    }
+    .oscar__img {
+      padding-bottom: 0;
+    }
+  }
+
+  .main-navigation {
+    .site-title {
+      font-size: 1em;
+    }
+    ul {
+      display: block;
+    }
+  }
+
+  .burger__btn {
+    right: 20px;
+    top: 14px;
+  }
+
+  .burger-logo {
+    display: block;
+    margin: 0px auto;
+  }
+
+  .burger__nav ul li {
+    top: 10%;
+    a {
+      font-size: 30px;
+      text-align: center;
+    }
+  }
+
+  .burger-footer {
+    left: calc(50% - 126px / 2);
+  }
+
+  .orchid-menu {
+    position: absolute;
+    top: 20%;
+    left: -4%;
+    max-width: 83px;
+  }
+
+  .chat-violet-menu {
+    position: absolute;
+    top: 32%;
+    left: 15%;
+    max-width: 80px;
+  }
+
+  .sunflower-menu {
+    position: absolute;
+    top: 27%;
+    right: 7%;
+    max-width: 84px;
+  }
+
+  .random-flower-menu {
+    display: none;
+  }
+
+  .orange-flower-menu {
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    max-width: 51px;
+  }
+
+  .chat-noir-menu {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    max-width: 84px;
+  }
+
+  .chat-orange-menu {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    max-width: 86px;
+  }
+
+  .orange-orchid-menu {
+    position: absolute;
+    top: 81%;
+    right: -20%;
+    max-width: 246px;
+  }
+}
+
+/* Media Query for small tablets */
+@media all and (min-width: 700px) and (max-width: 920px) {
+  .banner {
+    background-image: none;
+    img {
+      width: 70%;
+      display: block;
+      margin: 0px auto;
+    }
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .story #characters {
+    margin: 0;
+    h3 {
+      margin: 0;
+    }
+  }
+
+  .swiper-slide img {
+    max-width: 250px;
+  }
+
+  .big-cloud {
+    left: 40%;
+    bottom: 32%;
+    width: 30%;
+  }
+
+  .little-cloud {
+    left: 22%;
+    bottom: 30%;
+    width: 15%;
+  }
+
+  #studio h2::before {
+    left: -3em;
+  }
+
+  .site-footer {
+    padding-top: 15%;
+    &::after {
+      bottom: 48em;
+    }
+  }
+
+  .oscar {
+    flex-direction: column;
+    .oscar__txt {
+      margin: 0;
+    }
+    .oscar__img {
+      padding-bottom: 0;
+    }
+  }
+
+  .burger__btn {
+    right: 35px;
+    top: 31px;
+  }
+
+  .burger-logo {
+    display: block;
+    margin: 0px auto;
+  }
+
+  .burger__nav ul li {
+    top: 10%;
+    a {
+      font-size: 40px;
+      text-align: center;
+    }
+  }
+
+  .orchid-menu {
+    position: absolute;
+    top: 10%;
+    left: -3%;
+    max-width: 173px;
+  }
+
+  .chat-violet-menu {
+    position: absolute;
+    top: 28%;
+    left: 15%;
+  }
+
+  .sunflower-menu {
+    position: absolute;
+    top: 27%;
+    right: 7%;
+  }
+
+  .random-flower-menu {
+    position: absolute;
+    top: 47%;
+    right: -4%;
+    max-width: 75px;
+  }
+
+  .orange-flower-menu {
+    position: absolute;
+    top: 55%;
+    left: 20%;
+    max-width: 71px;
+  }
+
+  .chat-noir-menu {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    max-width: 154px;
+  }
+
+  .chat-orange-menu {
+    position: absolute;
+    top: 80%;
+    left: 7%;
+    max-width: 106px;
+  }
+
+  .orange-orchid-menu {
+    position: absolute;
+    top: 75%;
+    right: -25%;
+    max-width: 400px;
+  }
+}

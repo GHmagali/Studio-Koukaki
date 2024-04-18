@@ -1,0 +1,151 @@
+.site-title {
+  text-align: center;
+  padding-top: 1em;
+}
+
+.burger__btn {
+  width: 40px;
+  height: 20px;
+  position: absolute;
+  top: 27px;
+  right: 120px;
+  z-index: 100;
+  span {
+    pointer-events: none;
+  }
+  .line1 {
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    background-color: black;
+    display: block;
+  }
+  .line2 {
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    top: 7px;
+    background-color: black;
+    display: block;
+  }
+  .line3 {
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    top: 14px;
+    background-color: black;
+    display: block;
+  }
+}
+
+.active .line1 {
+  transform: translateY(7px) rotate(45deg);
+  transition: 0.4s ease-in-out;
+}
+.active .line2 {
+  opacity: 0;
+}
+
+.active .line3 {
+  transform: translateY(-7px) rotate(-45deg);
+  transition: 0.4s ease-in-out;
+}
+
+.burger-logo {
+  filter: drop-shadow(0px 0px 7px #ff5e00a1);
+}
+
+.burger-footer {
+  position: absolute;
+  text-decoration: none;
+  font-size: 15px;
+  bottom: 5%;
+}
+
+.burger__nav {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0%;
+  background-color: #fff5e9;
+  padding-top: 60px;
+  display: none;
+  ul {
+    height: 80%;
+    list-style-type: none;
+    justify-content: center;
+    flex-direction: column;
+    li {
+      line-height: 2.5;
+      a {
+        text-decoration: none;
+        display: block;
+        font-size: 64px;
+        transition: 0.3s;
+        &:hover {
+          text-shadow: (0px 0px 10px #ff5e00ba);
+        }
+      }
+    }
+  }
+}
+
+.burger__nav.active {
+  right: 0;
+  display: block;
+}
+
+.orchid-menu {
+  position: absolute;
+  top: 10%;
+  left: -3%;
+  max-width: 173px;
+}
+
+.chat-violet-menu {
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  max-width: 110px;
+}
+
+.sunflower-menu {
+  position: absolute;
+  top: 15%;
+  right: 15%;
+}
+
+.random-flower-menu {
+  position: absolute;
+  top: 37%;
+  right: -1.5%;
+  max-width: 75px;
+}
+
+.orange-flower-menu {
+  position: absolute;
+  top: 55%;
+  left: 20%;
+  max-width: 71px;
+}
+
+.chat-noir-menu {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  max-width: 154px;
+}
+
+.chat-orange-menu {
+  position: absolute;
+  top: 80%;
+  left: 7%;
+  max-width: 106px;
+}
+
+.orange-orchid-menu {
+  position: absolute;
+  top: 67%;
+  right: -17%;
+}

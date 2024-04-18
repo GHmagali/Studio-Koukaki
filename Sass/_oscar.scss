@@ -1,0 +1,29 @@
+// Section présentant la nomination au festival
+.site-footer {
+  flex-direction: column;
+  padding-top: 10em;
+  &::before {
+    top: 6em;
+  }
+  &::after {
+    bottom: 45em;
+  }
+}
+
+.oscar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20em;
+}
+
+.oscar__txt {
+  background-image: url("/Koukaki/wp-content/themes/foce-child/assets/images/orange_oscar_bg.webp");
+  text-align: left;
+  padding: 2em;
+  margin-left: -4em;
+}
+
+.oscar__img {
+  padding-bottom: 5em;
+}

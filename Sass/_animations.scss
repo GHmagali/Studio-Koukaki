@@ -1,0 +1,74 @@
+// Effet de fade-in sur les sections au scroll
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.transition {
+  animation: fadeIn 1.8s ease-out;
+}
+
+// Rotation des fleurs et animation au scroll
+:root {
+  --rotate-duration: 12s;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.story h2::after,
+.story__article::after,
+#studio h2::before,
+#studio h2::after,
+.site-footer::before,
+.site-footer::after,
+.site-footer ul::after,
+.burger__nav .orchid-menu,
+.burger__nav .sunflower-menu,
+.burger__nav .random-flower-menu,
+.burger__nav .orange-flower-menu,
+.burger__nav .orange-orchid-menu {
+  animation: spin var(--rotate-duration) linear infinite;
+}
+
+// Animation des titres au scroll
+@keyframes movetext {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.titleAnim1 {
+  animation: movetext 0.9s ease-in;
+}
+
+.titleAnim2 {
+  animation: movetext 1s ease-in;
+}
+
+h2 span,
+h3 span {
+  display: inline-block;
+}
+
+// effet de flottement sur le logo
+@keyframes floating {
+  50% {
+    transform: translateY(30px);
+  }
+}
+
+.floating {
+  animation: floating 5s ease infinite;
+}
